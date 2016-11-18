@@ -64,23 +64,15 @@
                             <th>First Order Date</th>
                         </tr>
                     </thead>
-                    <tbody repeat.for="customer of Customers" data-bind="foreach: Customers">
+                    <tbody repeat.for="customer of Customers">
                         <tr>
                             <td>
-                                <!--ko text: ID -->
-                                <!--/ko-->
                                 ${customer.ID}</td>
                             <td>
-                                <!--ko text: FirstName -->
-                                <!--/ko-->
                                 ${customer.FirstName}</td>
                             <td>
-                                <!--ko text: LastName -->
-                                <!--/ko-->
                                 ${customer.LastName}</td>
                             <td>
-                                <!--ko text: FormatDate(FirstOrderDate) -->
-                                <!--/ko-->
                                 ${FormatDate(customer.FirstOrderDate)}</td>
                         </tr>
                     </tbody>

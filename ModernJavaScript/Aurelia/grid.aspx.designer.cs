@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ModernJavaScript.Knockout {
+namespace ModernJavaScript.Aurelia {
     
     
     public partial class grid {
