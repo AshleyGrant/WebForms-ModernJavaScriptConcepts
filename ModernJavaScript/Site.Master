@@ -53,6 +53,7 @@
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/Concepts.aspx">Common Concepts</a></li>
+                        <li><a runat="server" href="~/Aurelia">Aurelia</a></li>
                         <li><a runat="server" href="~/Knockout">Knockout</a></li>
                         <li><a runat="server" href="~/Angular1">Angular 1</a></li>
                     </ul>

@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Aurelia\au-scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Angular1\default.aspx" />
@@ -213,6 +214,10 @@
     <Content Include="bower_components\knockout\package.json" />
     <Content Include="bower_components\knockout\README.md" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Aurelia\default.aspx" />
+    <Content Include="Aurelia\formdetails.aspx" />
+    <Content Include="Aurelia\grid.aspx" />
+    <Content Include="Aurelia\logo.jpg" />
     <Content Include="Knockout\default.aspx" />
     <Content Include="Knockout\formdetails.aspx" />
     <Content Include="Knockout\grid.aspx" />
@@ -308,6 +313,27 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Aurelia\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aurelia\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aurelia\formdetails.aspx.cs">
+      <DependentUpon>formdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aurelia\formdetails.aspx.designer.cs">
+      <DependentUpon>formdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aurelia\grid.aspx.cs">
+      <DependentUpon>grid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aurelia\grid.aspx.designer.cs">
+      <DependentUpon>grid.aspx</DependentUpon>
     </Compile>
     <Compile Include="Knockout\default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
