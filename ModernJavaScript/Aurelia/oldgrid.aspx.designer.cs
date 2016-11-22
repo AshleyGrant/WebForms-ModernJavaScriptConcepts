@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ModernJavaScript.Knockout {
+namespace ModernJavaScript.Aurelia {
     
     
-    public partial class grid {
+    public partial class oldgrid {
         
         /// <summary>
         /// ToggleLink control.
@@ -20,7 +20,7 @@ namespace ModernJavaScript.Knockout {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton ToggleLink;
-
+        
         /// <summary>
         /// myGrid control.
         /// </summary>

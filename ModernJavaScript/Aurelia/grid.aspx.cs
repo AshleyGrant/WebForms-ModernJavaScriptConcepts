@@ -9,42 +9,40 @@ using System.Web.UI.WebControls;
 
 namespace ModernJavaScript.Aurelia
 {
-  public partial class grid : System.Web.UI.Page
-  {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class grid : System.Web.UI.Page
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            ServerSideDataBinding();
+        }
 
-      ServerSideDataBinding();
+        public bool IsClientSideDataBindingEnabled
+        {
+            get { return myGrid.Attributes["ClientDataBinding"].Equals("true", StringComparison.InvariantCultureIgnoreCase); }
+        }
+
+
+        [WebMethod]
+        public static IEnumerable<Customer> GetCustomers()
+        {
+
+            var repo = new CustomerRepository();
+            return repo.Get();
+
+        }
+
+        public void ServerSideDataBinding()
+        {
+            myGrid.DataSource = GetCustomers();
+            myGrid.DataBind();
+        }
+
+        protected void ToggleLink_Click(object sender, EventArgs e)
+        {
+            myGrid.Attributes["ClientDataBinding"] = (!IsClientSideDataBindingEnabled).ToString();
+            ServerSideDataBinding();
+        }
+
 
     }
-
-    public bool IsClientSideDataBindingEnabled
-    {
-      get { return myGrid.Attributes["ClientDataBinding"].Equals("true", StringComparison.InvariantCultureIgnoreCase); }
-    }
-
-
-    [WebMethod]
-    public static IEnumerable<Customer> GetCustomers()
-    {
-
-      var repo = new CustomerRepository();
-      return repo.Get();
-
-    }
-
-    public void ServerSideDataBinding()
-    {
-      myGrid.DataSource = !IsClientSideDataBindingEnabled ? GetCustomers() : new Customer[] { };
-      myGrid.DataBind();
-    }
-
-    protected void ToggleLink_Click(object sender, EventArgs e)
-    {
-      myGrid.Attributes["ClientDataBinding"] = (!IsClientSideDataBindingEnabled).ToString();
-      ServerSideDataBinding();
-    }
-
-
-  }
 }

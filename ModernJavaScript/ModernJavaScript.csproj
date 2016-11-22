@@ -118,13 +118,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Aurelia\au-scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Angular1\default.aspx" />
     <Content Include="Angular1\formdetails.aspx" />
     <Content Include="Angular1\grid.aspx" />
     <Content Include="Angular1\logo.jpg" />
+    <Content Include="Aurelia\au-scripts\aurelia-core.js" />
+    <Content Include="Aurelia\au-scripts\aurelia-core.min.js" />
+    <Content Include="Aurelia\au-scripts\aurelia-routing.js" />
+    <Content Include="Aurelia\au-scripts\aurelia-routing.min.js" />
+    <Content Include="Aurelia\au-scripts\config-esnext.js" />
+    <Content Include="Aurelia\au-scripts\config-typescript.js" />
+    <Content Include="Aurelia\au-scripts\system.js" />
+    <Content Include="Aurelia\oldgrid.aspx" />
     <Content Include="bower_components\angular\angular-csp.css" />
     <Content Include="bower_components\angular\angular.js" />
     <Content Include="bower_components\angular\angular.min.js" />
@@ -296,6 +303,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Aurelia\oldgrid.aspx.cs">
+      <DependentUpon>oldgrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aurelia\oldgrid.aspx.designer.cs">
+      <DependentUpon>oldgrid.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Concepts.aspx.cs">
       <DependentUpon>Concepts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -304,6 +318,7 @@
       <DependentUpon>Concepts.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controls\AuGridView.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

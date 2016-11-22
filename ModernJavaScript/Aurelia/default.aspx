@@ -34,6 +34,8 @@
   <dl class="dl-horizontal">
     <dt><a href="grid.aspx">Simple GridView</a></dt>
     <dd>A standard ASP.NET GridView control that is configured to fetch data using jQuery and bind with Aurelia</dd>
+    <dt><a href="oldgrid.aspx">Old Simple GridView</a></dt>
+    <dd>A standard ASP.NET GridView control that is configured to fetch data using jQuery and bind with Aurelia</dd>
 
     <%--<dt>Simple Form Details</dt>
     <dd>A FormDetails control configured to fetch and save data using jQuery and data-bind using Knockout.  Sample not completed yet</dd>--%>

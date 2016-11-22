@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ModernJavaScript.Aurelia {
+namespace ModernJavaScript.Knockout {
     
     
     public partial class _default {
